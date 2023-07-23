@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package employee;
 
+option go_package = "./pb";
+
 import "proto/date.proto";
 
 message Employee {
@@ -21,7 +23,7 @@ message Employee {
 enum Occupation {
     OCCUPATION_UNKNOWN = 0;
     ENGINEER = 1;
-    DESINER = 2;
+    DESIGNER = 2;
     MANAGER = 3;
 }
 
